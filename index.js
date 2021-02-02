@@ -26,13 +26,7 @@ $(document).ready(function() {
         "choice3": "<script file='xxx.js'>",
         "answer": 1
       },
-      // {
-      //   "question": " How do you write 'Hello World' in an alert box?",
-      //   "choice1": "msgBox('Hello World');",
-      //   "choice3": "msg('Hello World');",
-      //   "choice4": "alert('Hello World');",
-      //   "answer": 4
-      // }
+      
     ]
 
     
