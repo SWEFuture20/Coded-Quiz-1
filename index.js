@@ -15,6 +15,11 @@ $(document).ready(function() {
     let questChoiceTwo = "Woodrow Wilson";
     let questChoiceThree = "Rutherford Hayes";
 
+    letquestTwo = "Who is the 20th President?";
+    let questChoiceFour = "James Buchanan";
+    let questChoiceFive = "Woodrow Wilson";
+    let questChoiceSix = "Rutherford Hayes";
+    
     let h1 = document.createElement('h1');
     h1.append(questOne);
     document.body.appendChild(h1);
@@ -29,7 +34,7 @@ $(document).ready(function() {
     document.body.appendChild(buttonTwo);
     document.body.appendChild(buttonThree);
     
-    correctOne();
+    // correctOne();
     
     // const CORRECT_BONUS = 2;
     // const MAX_QUESTIONS = 2;
@@ -73,22 +78,27 @@ $(document).ready(function() {
     }
 
     $('#button1').on("click", timer);
+    $("#correct").on("click", function(event){
+      event.preventDefault();
+      correctOne();
+   
 
-    var results = $("#correct").val().trim();
     
     function correctOne(){
-    let questOneResults = results
+    let questOneResults = "Woodrow Wilson"
       var buttonAns = 0;
       if (questOneResults == "Woodrow Wilson") {
         alert("You are correct")
         var choice = buttonAns + questionCounter;
         console.log(choice)
-      } else (!questOneResults == "Woodrow Wilson") 
+      } else if (!questOneResults == "Woodrow Wilson") 
+      sec - 2;
       alert("You are wrong")
         var choiceTwo = buttonAns - questionCounter;
         console.log(choiceTwo)
       
     }
+  })
     // correctOne();
     
 
