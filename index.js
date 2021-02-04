@@ -16,9 +16,9 @@ $(document).ready(function() {
     let questChoiceThree = "Rutherford Hayes";
 
     letquestTwo = "Who is the 20th President?";
-    let questChoiceFour = "James Buchanan";
-    let questChoiceFive = "Woodrow Wilson";
-    let questChoiceSix = "Rutherford Hayes";
+    let questChoiceFour = "Andrew Jackson";
+    let questChoiceFive = "Herbert Hoover";
+    let questChoiceSix = "James Garfield";
 
     let h1 = document.createElement('h1');
     h1.append(questOne);
