@@ -30,37 +30,6 @@ $(document).ready(function() {
     document.body.appendChild(buttonThree);
     
     correctOne();
-    // function correctOne(){
-    //   var buttonAns = 0;
-    //   if (choice === "Woodrow Wilson") {
-    //     var choice = buttonAns + questionCounter;
-    //     console.log(choice)
-    //   } else{ (!buttonAns === "Woodrow Wilson") 
-    //     var choiceTwo = buttonAns - questionCounter;
-    //     console.log(choiceTwo)
-    //   }
-    // }
-    // correctOne();
-
-
-    // let questions = [
-    //   {
-    //     "question": "Inside which HTML element do we put the JavaScript??",
-    //     "choice1": "<script>",
-    //     "choice2": "<javascript>",
-    //     "choice3": "<js>",
-    //     "answer": 3
-    //   },
-    //   {
-    //     "question": "What is the correct syntax for referring to an external script called 'xxx.js'?",
-    //     "choice1": "<script href='xxx.js'>",
-    //     "choice2": "<script src='xxx.js'>",
-    //     "choice3": "<script file='xxx.js'>",
-    //     "answer": 1
-    //   },
-
-    // ]
-    // // $(<h1>Question 1</h1>).createElement
     
     // const CORRECT_BONUS = 2;
     // const MAX_QUESTIONS = 2;
@@ -104,7 +73,9 @@ $(document).ready(function() {
     }
 
     $('#button1').on("click", timer);
+
     var results = $("#correct").val().trim();
+    
     function correctOne(){
     let questOneResults = results
       var buttonAns = 0;
