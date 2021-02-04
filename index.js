@@ -6,7 +6,7 @@ $(document).ready(function() {
     var currentQuestion = {};
     var Answers = true;
     var score = 0;
-    var questionCounter = 0;
+    var questionCounter = 1;
     var availableQuestion = [];
 
   
@@ -29,7 +29,11 @@ $(document).ready(function() {
     document.body.appendChild(buttonThree);
     
     function correctOne(){
-      if (button == "Woodrow Wilson")
+      if (button == "Woodrow Wilson") {
+        console.log(questionCounter++)
+      } else{ (!button == "Woodrow Wilson") 
+        console.log(questionCounter--)
+      }
     }
     correctOne();
 
@@ -89,9 +93,9 @@ $(document).ready(function() {
             alert("Time out!! :(");
     
         }
-        startGame();
+        
       }, 1000);
-      
+      correctOne();
     }
 
     $('#button1').on("click", timer);
