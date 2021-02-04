@@ -19,7 +19,7 @@ $(document).ready(function() {
     let questChoiceFour = "James Buchanan";
     let questChoiceFive = "Woodrow Wilson";
     let questChoiceSix = "Rutherford Hayes";
-    
+
     let h1 = document.createElement('h1');
     h1.append(questOne);
     document.body.appendChild(h1);
@@ -34,6 +34,13 @@ $(document).ready(function() {
     document.body.appendChild(buttonTwo);
     document.body.appendChild(buttonThree);
     
+    var person = prompt("Please enter your name", "");
+
+if (person == null || person == "") {
+  txt = "Try again.";
+} else {
+  txt = "Hello " + person + "yur score is " + score;
+}
     // correctOne();
     
     // const CORRECT_BONUS = 2;
@@ -80,11 +87,11 @@ $(document).ready(function() {
     $('#button1').on("click", timer);
     $("#correct").on("click", function(event){
       event.preventDefault();
-      correctOne();
+      // correctOne();
    
 
     
-    function correctOne(){
+    // function correctOne(){
     let questOneResults = "Woodrow Wilson"
       var buttonAns = 0;
       if (questOneResults == "Woodrow Wilson") {
@@ -97,10 +104,9 @@ $(document).ready(function() {
         var choiceTwo = buttonAns - questionCounter;
         console.log(choiceTwo)
       
-    }
+    // }
   })
     // correctOne();
-    
 
 
 
