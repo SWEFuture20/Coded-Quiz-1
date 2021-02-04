@@ -20,6 +20,7 @@ $(document).ready(function() {
     document.body.appendChild(h1);
     let button = document.createElement('button');
     let buttonTwo = document.createElement('button');
+    buttonTwo.id = "correct";
     let buttonThree = document.createElement('button');
     button.append(questChoiceOne);
     buttonTwo.append(questChoiceTwo);
@@ -28,14 +29,18 @@ $(document).ready(function() {
     document.body.appendChild(buttonTwo);
     document.body.appendChild(buttonThree);
     
-    function correctOne(){
-      if (button == "Woodrow Wilson") {
-        console.log(questionCounter++)
-      } else{ (!button == "Woodrow Wilson") 
-        console.log(questionCounter--)
-      }
-    }
     correctOne();
+    // function correctOne(){
+    //   var buttonAns = 0;
+    //   if (choice === "Woodrow Wilson") {
+    //     var choice = buttonAns + questionCounter;
+    //     console.log(choice)
+    //   } else{ (!buttonAns === "Woodrow Wilson") 
+    //     var choiceTwo = buttonAns - questionCounter;
+    //     console.log(choiceTwo)
+    //   }
+    // }
+    // correctOne();
 
 
     // let questions = [
@@ -95,11 +100,25 @@ $(document).ready(function() {
         }
         
       }, 1000);
-      correctOne();
+      
     }
 
     $('#button1').on("click", timer);
-
+    var results = $("#correct").val().trim();
+    function correctOne(){
+    let questOneResults = results
+      var buttonAns = 0;
+      if (questOneResults == "Woodrow Wilson") {
+        alert("You are correct")
+        var choice = buttonAns + questionCounter;
+        console.log(choice)
+      } else (!questOneResults == "Woodrow Wilson") 
+      alert("You are wrong")
+        var choiceTwo = buttonAns - questionCounter;
+        console.log(choiceTwo)
+      
+    }
+    // correctOne();
     
 
 
