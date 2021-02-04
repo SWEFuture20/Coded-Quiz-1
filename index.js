@@ -33,17 +33,17 @@ $(document).ready(function() {
     let questChoiceSix = "James Garfield";
 
     let div = document.createElement('div')
-    div.append(h1);
-    let h1 = document.createElement('h1');
+    let h2 = document.createElement('h1');
+    div.append(h2);
     h1.append(questTwo);
     document.body.appendChild(h1);
-    let button = document.createElement('button');
-    let buttonTwo = document.createElement('button');
-    buttonTwo.id = "correct";
-    let buttonThree = document.createElement('button');
-    button.append(questChoiceFour);
-    buttonTwo.append(questChoiceFive);
-    buttonThree.append(questChoiceSix);
+    let buttonFour = document.createElement('button');
+    let buttonFive = document.createElement('button');
+    buttonFive.id = "correct";
+    let buttonSix = document.createElement('button');
+    buttonFour.append(questChoiceFour);
+    buttonFive.append(questChoiceFive);
+    buttonSix.append(questChoiceSix);
     document.body.appendChild(button);
     document.body.appendChild(buttonTwo);
     document.body.appendChild(buttonThree);
@@ -54,7 +54,7 @@ $(document).ready(function() {
 if (person == null || person == "") {
   txt = "Try again.";
 } else {
-  txt = "Hello " + person + "yur score is " + score;
+  txt = "Hello " + person + "your score is " + score;
 }
     // correctOne();
     
