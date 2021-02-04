@@ -1,7 +1,5 @@
 $(document).ready(function() {
     var sec = 60;
-    var questionOne = document.getElementById("questionS")
-    var choice = Array.from(document.getElementsByClassName("btn"));
     var seconds = document.querySelector(".seconds");
     var currentQuestion = {};
     var Answers = true;
@@ -14,11 +12,6 @@ $(document).ready(function() {
     let questChoiceOne = "James Buchanan";
     let questChoiceTwo = "Woodrow Wilson";
     let questChoiceThree = "Rutherford Hayes";
-
-    letquestTwo = "Who is the 20th President?";
-    let questChoiceFour = "Andrew Jackson";
-    let questChoiceFive = "Herbert Hoover";
-    let questChoiceSix = "James Garfield";
 
     let h1 = document.createElement('h1');
     h1.append(questOne);
@@ -33,6 +26,28 @@ $(document).ready(function() {
     document.body.appendChild(button);
     document.body.appendChild(buttonTwo);
     document.body.appendChild(buttonThree);
+
+    let questTwo = "Who is the 20th President?";
+    let questChoiceFour = "Andrew Jackson";
+    let questChoiceFive = "Herbert Hoover";
+    let questChoiceSix = "James Garfield";
+
+    let div = document.createElement('div')
+    div.append(h1);
+    let h1 = document.createElement('h1');
+    h1.append(questTwo);
+    document.body.appendChild(h1);
+    let button = document.createElement('button');
+    let buttonTwo = document.createElement('button');
+    buttonTwo.id = "correct";
+    let buttonThree = document.createElement('button');
+    button.append(questChoiceFour);
+    buttonTwo.append(questChoiceFive);
+    buttonThree.append(questChoiceSix);
+    document.body.appendChild(button);
+    document.body.appendChild(buttonTwo);
+    document.body.appendChild(buttonThree);
+    
     
     var person = prompt("Please enter your name", "");
 
