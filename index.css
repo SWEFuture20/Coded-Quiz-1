@@ -1,0 +1,25 @@
+h1 {
+
+   font-size: 35px;
+   margin-left: 600px; 
+   margin-top: 50px;
+}
+.seconds{
+    display: none;
+}
+
+.btn-outline-primary{
+    margin-left: 700px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#wrong{
+    width: 20%;
+}
+
+#correct, #correctTwo{
+    width: 20%;
+}
